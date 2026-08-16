@@ -1,5 +1,416 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>ABDO STUDIO</title>
+
+    <meta name="description"
+          content="ABDO STUDIO - البرمجة والتصميم والتقنية">
+
+    <meta property="og:title"
+          content="ABDO STUDIO">
+
+    <meta property="og:description"
+          content="منصة ABDO STUDIO للبرمجة والتصميم والتقنية">
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: #070707;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            padding: 18px 20px;
+            background: #111;
+            border-bottom: 1px solid #292929;
+            text-align: center;
+        }
+
+        .logo {
+            color: #00ff88;
+            font-size: 26px;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        .username {
+            color: #888;
+            margin-top: 7px;
+            font-size: 15px;
+        }
+
+        .hero {
+            min-height: 75vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        .hero-content {
+            max-width: 800px;
+        }
+
+        .hero h1 {
+            font-size: clamp(42px, 12vw, 75px);
+            color: #00ff88;
+            text-shadow: 0 0 25px #00ff88;
+        }
+
+        .hero-description {
+            margin-top: 20px;
+            color: #bbb;
+            line-height: 1.9;
+            font-size: 18px;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            border: 0;
+            border-radius: 10px;
+            padding: 14px 24px;
+            background: #00ff88;
+            color: #000;
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: none;
+            transition: .2s;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 0 20px #00ff88;
+        }
+
+        .secondary {
+            background: #191919;
+            color: white;
+            border: 1px solid #333;
+        }
+
+        section {
+            padding: 60px 20px;
+        }
+
+        .title {
+            text-align: center;
+            color: #00ff88;
+            margin-bottom: 30px;
+            font-size: 32px;
+        }
+
+        .cards {
+            max-width: 1000px;
+            margin: auto;
+            display: grid;
+            grid-template-columns:
+                repeat(auto-fit, minmax(220px, 1fr));
+            gap: 18px;
+        }
+
+        .card {
+            background: #111;
+            border: 1px solid #292929;
+            border-radius: 15px;
+            padding: 27px;
+            transition: .25s;
+        }
+
+        .card:hover {
+            transform: translateY(-6px);
+            border-color: #00ff88;
+            box-shadow: 0 0 20px #00ff8833;
+        }
+
+        .card h3 {
+            color: #00ff88;
+            margin-bottom: 12px;
+        }
+
+        .card p {
+            color: #aaa;
+            line-height: 1.8;
+        }
+
+        .terminal {
+            max-width: 800px;
+            margin: auto;
+            background: #030303;
+            border: 1px solid #222;
+            border-radius: 12px;
+            padding: 22px;
+            color: #00ff88;
+            font-family: monospace;
+            line-height: 2;
+            direction: ltr;
+            text-align: left;
+        }
+
+        footer {
+            padding: 30px 20px;
+            text-align: center;
+            color: #777;
+            background: #111;
+            border-top: 1px solid #292929;
+            line-height: 2;
+        }
+
+        @media (max-width: 500px) {
+
+            .hero {
+                min-height: 70vh;
+            }
+
+            .btn {
+                width: 100%;
+                max-width: 300px;
+            }
+
+            .hero h1 {
+                font-size: 42px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<header>
+
+    <div class="logo">
+        🔱 ABDO STUDIO
+    </div>
+
+    <div class="username">
+        @ABDOESLAM2026
+    </div>
+
+</header>
+
+
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <h1>
+            ABDO STUDIO
+        </h1>
+
+        <p class="hero-description">
+
+            مرحبًا بك في منصتي الخاصة
+            <br>
+
+            للبرمجة والتصميم والتقنية.
+
+            <br><br>
+
+            Build • Create • Learn • Explore
+
+        </p>
+
+
+        <div class="buttons">
+
+            <a
+                class="btn"
+                href="https://wa.me/201228861712"
+                target="_blank"
+                rel="noopener">
+
+                💬 تواصل معي عبر واتساب
+
+            </a>
+
+
+            <button
+                class="btn secondary"
+                onclick="shareSite()">
+
+                🔗 مشاركة الموقع
+
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<section>
+
+    <h2 class="title">
+        ⚙️ خدماتي
+    </h2>
+
+
+    <div class="cards">
+
+
+        <div class="card">
+
+            <h3>
+                💻 البرمجة
+            </h3>
+
+            <p>
+                Python و Java و JavaScript
+                وتطوير تطبيقات الويب.
+            </p>
+
+        </div>
+
+
+
+        <div class="card">
+
+            <h3>
+                🎨 التصميم
+            </h3>
+
+            <p>
+                تصميم واجهات ومشاريع
+                رقمية حديثة.
+            </p>
+
+        </div>
+
+
+
+        <div class="card">
+
+            <h3>
+                🛡️ Cyber Lab
+            </h3>
+
+            <p>
+                دراسة الأمن السيبراني
+                والتجارب داخل بيئات اختبارية.
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<section>
+
+    <h2 class="title">
+        💻 ABDO TERMINAL
+    </h2>
+
+
+    <div class="terminal">
+
+        &gt; ABDO STUDIO ONLINE<br>
+
+        &gt; USER: ABDOESLAM2026<br>
+
+        &gt; SYSTEM: READY<br>
+
+        &gt; STATUS: ONLINE
+
+    </div>
+
+</section>
+
+
+
+<footer>
+
+    © 2026 ABDO STUDIO
+
+    <br>
+
+    @ABDOESLAM2026
+
+</footer>
+
+
+
+<script>
+
+function shareSite() {
+
+    const data = {
+
+        title: "ABDO STUDIO",
+
+        text: "شاهد موقع ABDO STUDIO",
+
+        url: window.location.href
+
+    };
+
+
+    if (navigator.share) {
+
+        navigator.share(data);
+
+    } else {
+
+        navigator.clipboard
+            .writeText(window.location.href)
+
+            .then(() => {
+
+                alert("تم نسخ رابط الموقع!");
+
+            })
+
+            .catch(() => {
+
+                alert("انسخ رابط الموقع من شريط المتصفح.");
+
+            });
+
+    }
+
+}
+
+</script>
+
+
+</body>
+
+    </html>
+    <!DOCTYPE html>
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <title>ABDO STUDIO - من أنا</title>
